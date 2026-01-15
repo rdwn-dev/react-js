@@ -1,27 +1,20 @@
 import "./App.css";
+import Header from "./components/Header";
+import MainContent from "./components/MainContent";
+import Skill from "./components/SkillList";
 
 function App() {
-  const namaApp = "Proyek react pertama saya";
-  const user = {
-    nama: "Ridwan",
-    umur: 20,
-    posisi: "Web Dev",
-  };
-
   return (
     <>
-      <h1>Selamat datang di {namaApp}</h1>
-      <p>
-        Hai, Saya <strong>{user.nama}</strong>
-      </p>
-      <p>
-        Saya berumur <strong>{user.umur}</strong> tahun
-      </p>
-      <p>
-        Saya bekerja sebagai <strong>{user.posisi}</strong>
-      </p>
+      {/* Panggil komponen header */}
+      <Header />
+      {/* Panggil komponen MainContent */}
+      <MainContent />
+      <Skill />
 
-      <button onClick={() => alert("Semangat Belajar!!!")}>Klik Saya</button>
+      <footer style={{ textAlign: "center", marginTop: "50px" }}>
+        <p>© 2024 Coding Partner Learning</p>
+      </footer>
     </>
   );
 }
