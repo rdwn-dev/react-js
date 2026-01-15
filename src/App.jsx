@@ -5,6 +5,7 @@ import MainContent from "./components/MainContent";
 import Skill from "./components/SkillList";
 import Kost from "./components/DataKos";
 import ProdukCard from "./components/ProdukCard";
+import DaftarTugas from "./components/DaftarTugas";
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
         <ProdukCard namaProduk="Laptop Gaming" harga={16000000} stok={5} />
         <ProdukCard namaProduk="Laptop Asus" harga={8000000} stok={0} />
       </div>
+
+      {/* Panggil komponen DaftarTugas */}
+      <DaftarTugas />
 
       <footer style={{ textAlign: "center", marginTop: "50px" }}>
         <p>© 2024 Coding Partner Learning</p>
